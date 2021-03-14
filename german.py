@@ -28,7 +28,7 @@ ctx.matches = 'mode: user.german'
 ctx.settings = {
 	'speech.engine': 'vosk',
 	#	'speech.language': 'de_DE',
-	'speech.timeout': 0.3
+	'speech.timeout': 0.300
 }
 
 mod.setting("german_unicode",
@@ -101,6 +101,7 @@ ctx.lists["self.sonderzeichen"] = {
 	"doppelpunkt": ":",
 	"semikolon": ";",
 	"bindestrich": "-",
+	"Folgerungen Pfeil": "-->",
 	"gedankenstrich": "–",
 	"unterstrich": "_",
 	"schrägstrich": "/",
@@ -108,6 +109,9 @@ ctx.lists["self.sonderzeichen"] = {
 	"senkrecht strich": "|",
 	"zitat": '„',
 	"zitat ende": '“',
+	"Gänsefüßchen unten": '„',
+	"Gänsefüßchen oben": '“',
+	"Leertaste": '␣',
 	"halbes zitat": '‚',
 	"halbes zitat ende": '‘',
 	"apostroph": "’",
@@ -123,7 +127,7 @@ ctx.lists["self.sonderzeichen"] = {
 	"sternchen": "*",
 	"kleiner zeichen": "<",
 	"größer zeichen": ">",
-	"ist gleich zeichen": "=",
+	"gleich zeichen": "=",
 	"raute": "#",
 	"tilde": "~",
 	"zirkumflex": "^",
