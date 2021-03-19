@@ -10,6 +10,10 @@ from . clipscanner import ClipScanner
 path = os.path.dirname(os.path.abspath(__file__))
 with open(path + "/dictionary/german.dic", encoding='ISO-8859-1') as f:
 	list_of_words = f.read().split("\n")
+with open(path + "/dictionary/german.custom.dic", encoding='ISO-8859-1') as f:
+	list_of_custom_words = f.read().split("\n")
+
+list_of_words.extend(list_of_custom_words)
 
 dict_of_words = {}
 for word in list_of_words:

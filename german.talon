@@ -21,7 +21,7 @@ mode: user.german
 # using token for counting the number of "weg"s
 ^<user.weg>$: user.smart_delete(weg)
 
-^speichern$: edit.save()
+^speichern$: key("ctrl-s")
 
 
 smart <user.satz>: user.smart_insert(satz)
@@ -35,7 +35,8 @@ löschen: key("backspace")
 (gruß | groß | große | großer | großen | großes | großen) <user.satz>: user.insert_formatted(satz, "CAPITALIZE_FIRST_WORD")
 (klein | Kleinbuchstaben | kleinen Buchstaben | kleine Buchstaben) <user.satz>: user.insert_formatted(satz, "NOOP")
 
-copy: key("ctrl-c")
+(copy | Kopie): key("ctrl-c")
 (Kat | cat): key("ctrl-x")
 (paste | passte): key("ctrl-v")
 Enter: key("Enter")
+neuer Absatz: key("Enter Enter")
