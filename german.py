@@ -30,7 +30,7 @@ mod.mode('german')
 ctx = Context()
 ctx.matches = 'mode: user.german'
 ctx.settings = {
-	'speech.engine': 'vosk',
+	'speech.engine': 'dragon',
 	#	'speech.language': 'de_DE',
 	'speech.timeout': 0.300
 }
