@@ -12,6 +12,10 @@ This is a plug-in for (so far only the patreon-only beta version of) Talon Voice
 * run `~/.talon/bin/pip install vosk` (on windows `scripts\pip install vosk`)
 * clone this repository into your talon user folder
 
+### Windows
+* install Vosk via pip in Talon directory: `./.venv/Scripts/pip.bat install vosk`
+* download the German language model from https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip and extract it into `%APPDATA%\talon\vosk\` on Windows, so that the actual model path is something like `C:\Users\<USER>\AppData\Roaming\talon\vosk\vosk-model-de-0.6`.
+
 It won't work on mac unless you sign the pip installed library file yourself, or unless aegis ships the vosk kaldi library with talon pre-signed.
 
 ## Usage
