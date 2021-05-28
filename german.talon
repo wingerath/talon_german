@@ -14,3 +14,5 @@ mode: user.german
 
 
 talon sleep | snore | go to sleep: skip()
+
+^german$: user.sound_disable()
