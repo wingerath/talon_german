@@ -9,6 +9,8 @@ mode: user.german
 
 ^(snore)$:
     user.engine_mimic("geh schlafen")
+	mode.disable("user.german")
+    speech.disable()
     user.sound_disable()
     user.app_color_black()
 
